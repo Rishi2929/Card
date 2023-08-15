@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@400;500;600;800&family=Karla:wght@400;800&family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@400;800&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;500;700&family=Smythe&family=Ubuntu:wght@400;700&display=swap');
+
+
+html {
+  font-size: 16px;
+}
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 8vh;
+  font-family: 'DM Sans', sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main styles for the navbar */
+.navbar {
+  margin: 0;
+  background-color: #6F6AF7;
+  display: flex;
+  align-items: center; /* Vertically center the content within the navbar */
+   /* Set the height of the navbar to 8% of the viewport height */
+  position: fixed;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style: none; /* Remove the bullets from the unordered list */
+}
+
+/* Styles for the links inside the navbar */
+.navbar li {
+  margin: 0 0.625rem;
+}
+
+/* Style for the DAAPPR list item */
+.navbar .daapr {
+  margin-right: auto;
+  font-family: 'Delius Unicase', cursive, sans-serif;
+  font-weight: 800;
+}
+.navbar .search-box {
+  margin-left: auto; /* Push the search box to the right */
+}
+.navbar .search-box input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 20px; /* Add rounded corners to the search box */
+  background-color: white;
+  color: #fff;
+}
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-size: 1rem; /* You can use px for font sizes to maintain precise control */
+}
+
+/* Change link color on hover */
+.navbar li a:hover {
+  background-color: transparent;
+}
+.menu-icon{
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+}
+.menu-checkbox{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+/* .img {
+  width: 250px; 
+  height: auto; 
+  width: 200;
+  height: auto;
+  top: 150px;
+  left: 100px;
+  border-radius: 20px;
+   Add additional styles for responsiveness 
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+}
+.rect{
+  background-color: blue;
+} */
+
+
+
+
+/*************************Hero*******************/
+.hero {
+  display: flex;
+  justify-content:space-between;
+  gap: 3rem;
+  margin: 10rem 8rem;
+  margin-bottom: 0;
+}
+
+.hero .left {
+  width: 28rem;
+  height: 31rem;
+}
+
+.hero .left img {
+  border-radius: 1.25rem;
+  height: 100%;
+  width: 100%;
+/* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+.hero .right {
+  width: 60.75rem;
+  height: 31.6875rem;
+  border-radius: 1.25rem;
+  border: 6px solid #FFF;
+  background: #E5D8FF;
+  box-shadow: 3px 5px 27px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.hero .right-text {
+  padding: 2rem 3rem;
+  color: #6F7373;
+  line-height: 178.7%; /* 3.23894rem */
+}
+
+
+/*****************Social Icons***********************/
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.social-icons {
+  position: fixed;
+  top: 150px;
+  right: 0;
+}
+
+.social-icons .icon {
+  border-radius: 0.6875rem;
+  background: #FFF;
+}
+
+.social-icons .whatsapp {
+  border: 3px solid #000;
+  width: 5.5rem;
+}
+
+
+/**********************Boxes***********************/
+
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.box {
+  width: 15rem;
+  height: 5rem;
+  padding: 1rem 0 0 1rem;
+  border-radius: 0.6875rem;
+  box-shadow: 0px 9px 31px 0px rgba(0, 0, 0, 0.40);
+}
+
+.box span {
+  display: flex;
+  margin-bottom: 0.7rem;
+  color: #FFF;
+  font-weight: 700;
+}
+
+.box1 {
+  background: #929DFF;
+}
+
+.box2 {
+  background: #734CF2;
+}
+
+.box3 {
+  background: #D288FF;
+}
+
+.box4 {
+  background: #000;
+}
+
+.call-img {
+  width: 7rem;
+  position: absolute;
+  bottom: -4rem;
+  right: 4.5rem;
+}
+
+
+/*****************************Profile********************/
+
+.profile {
+  margin: 11rem 5rem 5rem 5rem;
+  border-radius: 1.3125rem;
+  padding: 1rem;
+  background: #483EFF;
+  height: 30rem;
+}
+
+.profile .both-container {
+  display: flex;
+  gap: 3rem;
+  height: 100%;
+  width: 100%;
+}
+
+.button-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 0 0 1rem;
+}
+
+.button-options a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  border-radius: 1.375rem;
+  letter-spacing: 0.0875rem;
+  font-size: 2rem;
+}
+
+.button-options .info {
+  background: #BCE0F6;
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.39);
+}
+
+.button-options .bookmarks,
+.button-options .settings {
+  border-radius: 1.375rem;
+  border: 5px solid #FFF;
+  color: #fff;
+}
+
+.details {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1.1875rem;
+  padding: 3rem 0 0 2rem;
+  position: relative;
+}
+
+.details > h4 {
+  font-family: Inter;
+  font-size: 2.375rem;
+  font-weight: 700;
+  letter-spacing: 0.24938rem;
+}
+
+.details .basic-details {
+  padding: 0 0 0 1rem;
+  margin-top: 1.5rem;
+}
+
+.details .basic-details .container {
+  margin-bottom: 1rem;
+  color: #04285A;
+  font-family: Roboto;
+}
+
+.details .basic-details .container .bold {
+  font-weight: 500;
+  font-size: 1.75rem;
+  letter-spacing: 0.18375rem;
+}
+
+.details .basic-details .container .answer {
+  font-size: 1.5rem;
+  letter-spacing: 0.075rem;
+}
+
+.details .next {
+  border-radius: 0.5625rem;
+  background: #000;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 1.875rem;
+  letter-spacing: 0.09375rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+
